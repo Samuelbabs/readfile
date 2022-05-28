@@ -1,0 +1,34 @@
+from distutils.log import info
+
+
+class Bob():
+    def __init__(self , name, age, score, tracks):
+        self.name=name;
+        self.age=age;
+        self.score=score;
+        self.tracks=tracks;
+        pass;       
+
+    def car_ability(self, speed):
+        self.speed=20;
+        print("Ths is the automatic speed of the vehicle", self.speed);
+
+#Child Class     
+class Info(Bob):
+    def __init__(self, name, age, score, tracks):
+        self.name=name;
+        self.age=age;
+        self.score=score;
+        self.tracks=tracks;
+        pass
+        print("Name:", self.name);
+        print("Age", self.age);
+        print("Score:", self.score);
+        print("Tracks:", self.tracks);
+
+   
+    
+    
+Bob= Info(name="Bob", age=26, tracks=["FE","BE"], score=20.90);
+
+Bob;
